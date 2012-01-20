@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/attended"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="test"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center_vertical" />
+
+    <Button
+        android:id="@+id/missed"
+        android:text="Missed"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/attended"
+        android:textSize="12sp"
+        android:onClick="missedListener" />
+    
+    <Button
+        android:id="@+id/attended"
+        android:text="Attended"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textSize="12sp" 
+        android:onClick="attendedListener"/>
+    
+    <TextView
+        android:id="@+id/tvAttended"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/missed"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvTitle"
+        android:layout_margin="4dp"
+        android:text="test" />
+               <TextView
+        android:id="@+id/tvMissed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/missed"
+        android:layout_below="@+id/tvTitle"
+        android:layout_toRightOf="@+id/tvAttended"
+        android:layout_margin="4dp"
+        android:text="test" />
+    <TextView
+        android:id="@+id/tvPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/missed"
+        android:layout_below="@+id/tvTitle"
+        android:layout_toRightOf="@+id/tvMissed"
+        android:layout_margin="4dp"
+        android:text="test" />
+
+</RelativeLayout>
